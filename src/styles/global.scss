@@ -1,0 +1,91 @@
+$primary-font: "Poppins", sans-serif;
+$color-1: #d58432;
+$color-2: #4876ff;
+$lightblue: #e8f4f8;
+$white: #fff;
+$black: #000;
+$darkgrey: #333;
+$grey: #e8e8e8;
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: $white;
+  background-color: $color-1;
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $grey;
+  }
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid $darkgrey;
+  border-radius: 2px;
+}
+
+input {
+  &:disabled {
+    color: $grey;
+  }
+}
+
+button {
+  color: $white;
+  background-color: $color-2;
+  outline: none;
+  padding: 1em 2em 1em 2em;
+  border-color: $color-2;
+  font-weight: 700;
+  font-size: 1em;
+
+  &:disabled {
+    color: $white;
+    background-color: $grey;
+    border-color: $grey;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
